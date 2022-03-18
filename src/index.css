@@ -1,0 +1,136 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 38rem;
+    padding: 2rem;
+    /* background-color: #fff; */
+    background: url(`file:///images/backgroundrr.jpg`);
+}
+
+.logo{
+    width: 25px;
+}
+div.header{
+    font-size: 30px;
+}
+#screen{
+    /* width: 100%; */
+    height: 300px;
+}
+.is-recording{
+    background-color: #ff3300;
+}
+.record-icon{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    position: relative;
+    top: 3px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: transparent;
+}
+.stop-icon{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    position: relative;
+    top: 5px;
+    background-color: #000;
+}
+.record-icon > div{
+    width: 14px;
+    height: 14px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: 3px;
+}
+
+.button-record, .button-stop{
+    cursor: pointer;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+/* .button-record{
+    background-color: #fff;
+} */
+.button-stop{
+    background-color: #e0e0e0;
+}
+.buttons{
+    overflow: hidden;
+}
+.buttons > div{
+    float: left;
+    margin-right: 10px;
+}
+
+
+/*   ---------------------------Switch------------------------------- */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 25px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #444343;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #ebe6e6;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ff3300;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #000000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  

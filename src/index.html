@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pi Square Screen Recorder</title>
+    <!-- <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <script src="lib/jquery.js"></script>
+    <script src="lib/bootstrap.min.js"></script> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/> -->
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="render.js"></script>
+  </head>
+  <body class="content">
+    <div>
+      <span>
+        <label class="switch" >
+          <input type="checkbox" name="webCam" id="camSwitch">
+          <span class="slider round"></span>
+        </label>
+      </span>
+      <span style="color: White; font-weight: 500;">WebCam Switch</span>
+    </div>
+    <!-- <label for="webCam">
+      <input type="checkbox" name="webCam" id="camSwitch"> Web Cam Switch
+    </label> -->
+    <div style="margin-top: 20px;" class="header"><img class="logo" src="favicon.png" alt="Pi Square Tech Logo" srcset=""> <span style="color: white;">Screen Recorder</span></div>
+
+    <video id="screen" style="display: block"></video>
+    <!-- <video id="webCam"></video> -->
+
+    <div class="buttons">
+      <div id="startBtn" class="button-record">
+        <div class="record-icon round">
+          <div></div>
+        </div>
+      </div>
+      <div id="stopBtn" class="button-stop">
+        <div class="stop-icon">
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <button id="videoSelectBtn" class="button is-text">
+      Choose What to Record
+    </button>
+  </body>
+</html>
