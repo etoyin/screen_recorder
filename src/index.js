@@ -16,7 +16,7 @@ const createWindow = () => {
       nodeIntegration: true,
       contextIsolation: false,
     },
-    backgroundColor: "#111",
+    backgroundColor: "#111".
     /* background: URL(`file://${__dirname}/images/backgroundrr.jpg`),*/
     transparent: true,
     width: 800,
